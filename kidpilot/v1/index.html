@@ -377,37 +377,80 @@ body { font-family: 'Nunito', sans-serif; }
 
 <!-- ============ PRICING ============ -->
 <section class="py-20 px-6 bg-white">
-  <div class="max-w-3xl mx-auto text-center">
-    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4 animate-on-scroll">Simple pricing</h2>
-    <p class="text-stone-500 text-lg mb-12 animate-on-scroll">Start free. Upgrade when your kid is hooked.</p>
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4 animate-on-scroll">Early bird pricing</h2>
+    <p class="text-stone-500 text-lg mb-4 animate-on-scroll">Be a founding family. Lock in these prices forever.</p>
+    <p class="text-coral font-bold mb-12 animate-on-scroll">🔥 Founding member spots are limited</p>
 
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-cream rounded-2xl p-8 border-2 border-amber-200 animate-on-scroll hover:-translate-y-1 transition-transform">
-        <h3 class="font-heading text-2xl font-bold">Free</h3>
-        <div class="font-heading text-5xl font-extrabold my-4">$0</div>
-        <ul class="text-stone-600 space-y-3 text-left">
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Pro -->
+      <div class="bg-cream rounded-2xl p-8 border-2 border-amber-200 animate-on-scroll hover:-translate-y-1 transition-transform flex flex-col">
+        <h3 class="font-heading text-2xl font-bold">Pro</h3>
+        <p class="text-stone-400 text-sm mt-1">1 child</p>
+        <p class="text-stone-400 line-through mt-4">$95.88/yr</p>
+        <div class="font-heading text-5xl font-extrabold my-2">$49.99<span class="text-lg text-stone-400">/yr</span></div>
+        <p class="text-mint font-bold text-sm mb-4">Save 48%</p>
+        <ul class="text-stone-600 space-y-3 text-left flex-1">
           <li>✅ 1 AI buddy</li>
-          <li>✅ 3 habit tracks</li>
-          <li>✅ Daily check-ins</li>
-          <li>✅ Weekly parent email</li>
-          <li class="text-stone-400">— Basic buddy personality</li>
-        </ul>
-      </div>
-
-      <div class="bg-sky/5 rounded-2xl p-8 border-2 border-sky animate-on-scroll hover:-translate-y-1 transition-transform" style="transition-delay:0.15s">
-        <h3 class="font-heading text-2xl font-bold text-sky">Pro</h3>
-        <div class="font-heading text-5xl font-extrabold my-4">$7.99<span class="text-lg text-stone-400">/mo</span></div>
-        <ul class="text-stone-600 space-y-3 text-left">
-          <li>✅ Everything in Free</li>
           <li>✅ Unlimited habits</li>
           <li>✅ Full buddy evolution</li>
-          <li>✅ Parent dashboard app</li>
-          <li>✅ Multiple kids</li>
+          <li>✅ Parent dashboard</li>
+          <li>✅ Weekly reports</li>
         </ul>
+        <a href="https://buy.stripe.com/test_aFadR80x29vdfcta4qgrS03" target="_blank"
+           class="mt-6 block bg-sky text-white font-bold px-6 py-3 rounded-full text-center hover:bg-skyDark transition"
+           onclick="dataLayer.push({event:'deposit_click'})">
+          Get Pro →
+        </a>
+      </div>
+
+      <!-- Family (featured) -->
+      <div class="bg-sky/5 rounded-2xl p-8 border-2 border-sky animate-on-scroll hover:-translate-y-1 transition-transform flex flex-col relative" style="transition-delay:0.1s">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-sky text-white text-sm font-bold px-4 py-1 rounded-full">Most Popular</div>
+        <h3 class="font-heading text-2xl font-bold text-sky">Family</h3>
+        <p class="text-stone-400 text-sm mt-1">Up to 3 kids</p>
+        <p class="text-stone-400 line-through mt-4">$155.88/yr</p>
+        <div class="font-heading text-5xl font-extrabold my-2">$79.99<span class="text-lg text-stone-400">/yr</span></div>
+        <p class="text-mint font-bold text-sm mb-4">Save 49%</p>
+        <ul class="text-stone-600 space-y-3 text-left flex-1">
+          <li>✅ 3 AI buddies (unique each)</li>
+          <li>✅ Unlimited habits</li>
+          <li>✅ Full buddy evolution</li>
+          <li>✅ Family dashboard</li>
+          <li>✅ Sibling challenges</li>
+          <li>✅ Priority support</li>
+        </ul>
+        <a href="https://buy.stripe.com/test_8x2bJ03Je7n5ggxfoKgrS08" target="_blank"
+           class="mt-6 block bg-sky text-white font-bold px-6 py-3 rounded-full text-center hover:bg-skyDark transition"
+           onclick="dataLayer.push({event:'deposit_click'})">
+          Get Family →
+        </a>
+      </div>
+
+      <!-- Lifetime -->
+      <div class="bg-warmGray rounded-2xl p-8 border-2 border-warmGray animate-on-scroll hover:-translate-y-1 transition-transform flex flex-col text-white" style="transition-delay:0.2s">
+        <h3 class="font-heading text-2xl font-bold text-sun">Lifetime</h3>
+        <p class="text-stone-400 text-sm mt-1">Unlimited kids, forever</p>
+        <p class="text-stone-500 line-through mt-4">$479/lifetime</p>
+        <div class="font-heading text-5xl font-extrabold my-2">$149.99</div>
+        <p class="text-sun font-bold text-sm mb-4">One-time · Never pay again</p>
+        <ul class="text-stone-300 space-y-3 text-left flex-1">
+          <li>✅ Everything in Family</li>
+          <li>✅ Unlimited kids</li>
+          <li>✅ All future features</li>
+          <li>✅ Founding member badge</li>
+          <li>✅ Direct founder access</li>
+          <li>✅ Shape the product roadmap</li>
+        </ul>
+        <a href="https://buy.stripe.com/test_00wcN4gw0cHp4xP5OagrS09" target="_blank"
+           class="mt-6 block bg-sun text-warmGray font-bold px-6 py-3 rounded-full text-center hover:bg-sunDark transition"
+           onclick="dataLayer.push({event:'deposit_click'})">
+          Go Lifetime →
+        </a>
       </div>
     </div>
 
-    <p class="mt-8 text-stone-400 text-sm animate-on-scroll">Less than a single tutoring session. Cancel anytime.</p>
+    <p class="mt-8 text-stone-400 text-sm animate-on-scroll">All plans include a 30-day full refund guarantee. No questions asked.</p>
   </div>
 </section>
 
@@ -456,19 +499,23 @@ body { font-family: 'Nunito', sans-serif; }
 <section class="py-20 px-6 bg-amber-50">
   <div class="max-w-3xl mx-auto text-center animate-on-scroll">
     <div class="text-5xl mb-4">🐣</div>
-    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4">Early bird special</h2>
-    <p class="text-stone-600 text-lg mb-8">Be one of the first families. Lock in the founding price forever.</p>
-
-    <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-sun max-w-md mx-auto">
-      <p class="text-stone-400 line-through text-lg">Regular: $7.99/mo ($95.88/yr)</p>
-      <div class="font-heading text-5xl font-extrabold my-3 text-warmGray">$49.99<span class="text-lg text-stone-400">/year</span></div>
-      <p class="text-mint font-bold text-lg mb-2">Save 48% — forever</p>
-      <p class="text-stone-500 text-sm mb-6">30-day full refund guarantee. No questions asked.</p>
-      <a href="https://buy.stripe.com/test_aFadR80x29vdfcta4qgrS03" target="_blank"
-         class="inline-block bg-sun text-warmGray font-bold px-10 py-4 rounded-full text-lg hover:bg-sunDark transition"
-         onclick="dataLayer.push({event:'deposit_click'})">
-        Lock In Early Bird Price →
-      </a>
+    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4">Why pre-order now?</h2>
+    <div class="grid md:grid-cols-3 gap-6 mt-8 text-left">
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <div class="text-3xl mb-3">🔒</div>
+        <h3 class="font-heading text-lg font-bold">Price locked forever</h3>
+        <p class="text-stone-600 text-sm mt-2">Early bird pricing never goes up, even when we add features.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <div class="text-3xl mb-3">🗳️</div>
+        <h3 class="font-heading text-lg font-bold">Shape the product</h3>
+        <p class="text-stone-600 text-sm mt-2">Founding members vote on features and get direct access to the team.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <div class="text-3xl mb-3">💸</div>
+        <h3 class="font-heading text-lg font-bold">Risk-free</h3>
+        <p class="text-stone-600 text-sm mt-2">30-day full refund, no questions asked. Don't love it? Get every penny back.</p>
+      </div>
     </div>
   </div>
 </section>
