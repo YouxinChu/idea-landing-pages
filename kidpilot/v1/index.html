@@ -10,12 +10,14 @@
 <meta property="og:description" content="An AI buddy your kid actually wants. Builds habits, not resentment.">
 <meta property="og:type" content="website">
 
-<!-- GTM Head -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5S2G5DZB');</script>
+<!-- GA4 gtag.js -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0LCXT9XK4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q0LCXT9XK4');
+</script>
 
 <!-- Fonts: Baloo 2 (playful headings) + Nunito (friendly body) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -123,14 +125,12 @@ body { font-family: 'Nunito', sans-serif; }
 </style>
 </head>
 <body class="bg-cream text-warmGray">
-<!-- GTM Body -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S2G5DZB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Nav -->
 <nav id="nav" class="fixed top-0 w-full z-50 transition-all duration-300">
   <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
     <a href="#" class="font-heading text-2xl font-bold text-sky">🐾 KidPilot</a>
-    <a href="#waitlist" class="hidden sm:inline-block bg-sky text-white font-bold px-5 py-2 rounded-full text-sm hover:bg-skyDark transition" onclick="dataLayer.push({event:'cta_click'})">Join Waitlist</a>
+    <a href="#waitlist" class="hidden sm:inline-block bg-sky text-white font-bold px-5 py-2 rounded-full text-sm hover:bg-skyDark transition" onclick="gtag('event','cta_click')">Join Waitlist</a>
   </div>
 </nav>
 
@@ -152,7 +152,7 @@ body { font-family: 'Nunito', sans-serif; }
         Because their AI buddy made it feel like a game worth playing.
       </p>
       <div class="mt-8 flex flex-wrap gap-4">
-        <a href="#waitlist" class="cta-btn bg-sky text-white font-bold px-8 py-4 rounded-full text-lg hover:text-white transition" onclick="dataLayer.push({event:'cta_click'})">
+        <a href="#waitlist" class="cta-btn bg-sky text-white font-bold px-8 py-4 rounded-full text-lg hover:text-white transition" onclick="gtag('event','cta_click')">
           Join the Waitlist →
         </a>
         <a href="#story" class="text-sky font-bold px-6 py-4 text-lg hover:underline">See how it works ↓</a>
@@ -399,7 +399,7 @@ body { font-family: 'Nunito', sans-serif; }
         </ul>
         <a href="https://buy.stripe.com/test_3cI6oG6Vq5eX7K17WigrS0a" target="_blank"
            class="mt-6 block bg-sky text-white font-bold px-6 py-3 rounded-full text-center hover:bg-skyDark transition"
-           onclick="dataLayer.push({event:'deposit_click'})">
+           onclick="gtag('event','deposit_click')">
           Get Pro →
         </a>
       </div>
@@ -422,7 +422,7 @@ body { font-family: 'Nunito', sans-serif; }
         </ul>
         <a href="https://buy.stripe.com/test_8x24gycfK7n5e8pekGgrS0b" target="_blank"
            class="mt-6 block bg-sky text-white font-bold px-6 py-3 rounded-full text-center hover:bg-skyDark transition"
-           onclick="dataLayer.push({event:'deposit_click'})">
+           onclick="gtag('event','deposit_click')">
           Get Family →
         </a>
       </div>
@@ -444,7 +444,7 @@ body { font-family: 'Nunito', sans-serif; }
         </ul>
         <a href="https://buy.stripe.com/test_28EfZga7CePxe8p6SegrS0c" target="_blank"
            class="mt-6 block bg-sun text-warmGray font-bold px-6 py-3 rounded-full text-center hover:bg-sunDark transition"
-           onclick="dataLayer.push({event:'deposit_click'})">
+           onclick="gtag('event','deposit_click')">
           Go Lifetime →
         </a>
       </div>
@@ -530,12 +530,12 @@ body { font-family: 'Nunito', sans-serif; }
     <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
       <a href="https://buy.stripe.com/test_3cI6oG6Vq5eX7K17WigrS0a" target="_blank"
          class="bg-sun text-warmGray font-bold px-8 py-4 rounded-full text-lg hover:bg-sunDark transition"
-         onclick="dataLayer.push({event:'deposit_click'})">
+         onclick="gtag('event','deposit_click')">
         Early Bird $49.99/yr →
       </a>
       <a href="mailto:hello@kidpilot.app?subject=Waitlist%20Signup"
          class="bg-white/20 text-white font-bold px-8 py-4 rounded-full text-lg hover:bg-white/30 transition border border-white/30"
-         onclick="dataLayer.push({event:'cta_click'})">
+         onclick="gtag('event','cta_click')">
         Join Free Waitlist
       </a>
     </div>
@@ -605,7 +605,7 @@ window.addEventListener('scroll', () => {
     var scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
     if (scrollPercent >= 0.5) {
       fired = true;
-      dataLayer.push({event: 'scroll_50'});
+      gtag('event','scroll_50');
     }
   });
 })();

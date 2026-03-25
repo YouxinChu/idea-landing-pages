@@ -9,12 +9,13 @@
 <meta property="og:title" content="KidPilot — Your Kid's First AI Buddy">
 <meta property="og:description" content="An AI companion that turns daily habits into adventures.">
 <meta property="og:type" content="website">
-<!-- GTM (env: GTM-KPD7T6XS) -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KPD7T6XS');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0LCXT9XK4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q0LCXT9XK4');
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -32,13 +33,12 @@ html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;background:#0f17
 </style>
 </head>
 <body>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPD7T6XS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- NAV -->
 <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-dark/80 border-b border-white/5">
 <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 <span class="font-display text-xl font-bold text-brand">&#x1f680; KidPilot</span>
-<a href="#pricing" class="bg-brand text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-brandDark transition" onclick="dataLayer.push({event:'cta_click'})">Get Early Access</a>
+<a href="#pricing" class="bg-brand text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-brandDark transition" onclick="gtag('event','cta_click')">Get Early Access</a>
 </div>
 </nav>
 
@@ -54,7 +54,7 @@ Your kid's first<br><span class="gradient-text">AI buddy</span>
 An AI companion that grows with your child. Turns homework, chores, and habits into quests worth completing. You stop nagging. They start thriving.
 </p>
 <div class="mt-8 flex flex-wrap gap-4">
-<a href="#pricing" class="bg-brand text-white font-semibold px-8 py-4 rounded-full hover:bg-brandDark transition" onclick="dataLayer.push({event:'cta_click'})">Pre-order Now &rarr;</a>
+<a href="#pricing" class="bg-brand text-white font-semibold px-8 py-4 rounded-full hover:bg-brandDark transition" onclick="gtag('event','cta_click')">Pre-order Now &rarr;</a>
 <a href="#how" class="text-slate-400 font-semibold px-6 py-4 hover:text-white transition">See how it works &darr;</a>
 </div>
 <div class="mt-8 flex items-center gap-6 text-sm text-slate-500">
@@ -181,7 +181,7 @@ An AI companion that grows with your child. Turns homework, chores, and habits i
 <li>&#x2705; Parent dashboard</li>
 <li>&#x2705; Weekly reports</li>
 </ul>
-<a href="https://buy.stripe.com/test_fZu28qfrWdLtd4l0tQgrS0g" target="_blank" class="mt-6 block bg-brand text-white font-semibold py-3 rounded-full text-center hover:bg-brandDark transition" onclick="dataLayer.push({event:'deposit_click'})">Get Pro &rarr;</a>
+<a href="https://buy.stripe.com/test_fZu28qfrWdLtd4l0tQgrS0g" target="_blank" class="mt-6 block bg-brand text-white font-semibold py-3 rounded-full text-center hover:bg-brandDark transition" onclick="gtag('event','deposit_click')">Get Pro &rarr;</a>
 </div>
 <!-- Family -->
 <div class="bg-card rounded-2xl p-8 border-2 border-brand card-hover fade-up flex flex-col relative" style="transition-delay:.1s">
@@ -199,7 +199,7 @@ An AI companion that grows with your child. Turns homework, chores, and habits i
 <li>&#x2705; Sibling challenges</li>
 <li>&#x2705; Priority support</li>
 </ul>
-<a href="https://buy.stripe.com/test_fZu28q0x2dLte8p0tQgrS0h" target="_blank" class="mt-6 block bg-brand text-white font-semibold py-3 rounded-full text-center hover:bg-brandDark transition" onclick="dataLayer.push({event:'deposit_click'})">Get Family &rarr;</a>
+<a href="https://buy.stripe.com/test_fZu28q0x2dLte8p0tQgrS0h" target="_blank" class="mt-6 block bg-brand text-white font-semibold py-3 rounded-full text-center hover:bg-brandDark transition" onclick="gtag('event','deposit_click')">Get Family &rarr;</a>
 </div>
 <!-- Lifetime -->
 <div class="bg-gradient-to-br from-card to-slate-800 rounded-2xl p-8 border border-warm/30 card-hover fade-up flex flex-col" style="transition-delay:.2s">
@@ -216,7 +216,7 @@ An AI companion that grows with your child. Turns homework, chores, and habits i
 <li>&#x2705; Direct founder access</li>
 <li>&#x2705; Shape the roadmap</li>
 </ul>
-<a href="https://buy.stripe.com/test_6oU14mfrWePx3tLdgCgrS0i" target="_blank" class="mt-6 block bg-warm text-dark font-semibold py-3 rounded-full text-center hover:opacity-90 transition" onclick="dataLayer.push({event:'deposit_click'})">Go Lifetime &rarr;</a>
+<a href="https://buy.stripe.com/test_6oU14mfrWePx3tLdgCgrS0i" target="_blank" class="mt-6 block bg-warm text-dark font-semibold py-3 rounded-full text-center hover:opacity-90 transition" onclick="gtag('event','deposit_click')">Go Lifetime &rarr;</a>
 </div>
 </div>
 <p class="mt-8 text-slate-600 text-sm fade-up">30-day full refund guarantee. No questions asked.</p>
@@ -255,8 +255,8 @@ An AI companion that grows with your child. Turns homework, chores, and habits i
 <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Ready to stop being<br>the <span class="gradient-text">homework police</span>?</h2>
 <p class="text-slate-400 text-lg mb-8">Give your kid an AI buddy. Get your evenings back.</p>
 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-<a href="https://buy.stripe.com/test_fZu28q0x2dLte8p0tQgrS0h" target="_blank" class="bg-brand text-white font-semibold px-8 py-4 rounded-full hover:bg-brandDark transition" onclick="dataLayer.push({event:'deposit_click'})">Pre-order Family $79.99/yr &rarr;</a>
-<a href="mailto:hello@kidpilot.app?subject=Waitlist" class="border border-slate-600 text-slate-300 font-semibold px-8 py-4 rounded-full hover:border-slate-400 hover:text-white transition" onclick="dataLayer.push({event:'cta_click'})">Join Free Waitlist</a>
+<a href="https://buy.stripe.com/test_fZu28q0x2dLte8p0tQgrS0h" target="_blank" class="bg-brand text-white font-semibold px-8 py-4 rounded-full hover:bg-brandDark transition" onclick="gtag('event','deposit_click')">Pre-order Family $79.99/yr &rarr;</a>
+<a href="mailto:hello@kidpilot.app?subject=Waitlist" class="border border-slate-600 text-slate-300 font-semibold px-8 py-4 rounded-full hover:border-slate-400 hover:text-white transition" onclick="gtag('event','cta_click')">Join Free Waitlist</a>
 </div>
 <p class="mt-6 text-slate-600 text-sm">30-day money-back guarantee &middot; Cancel anytime</p>
 </div>
@@ -269,7 +269,7 @@ An AI companion that grows with your child. Turns homework, chores, and habits i
 <script>
 const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('show');obs.unobserve(el.target)}})},{threshold:.12});
 document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
-(function(){var f=false;window.addEventListener('scroll',function(){if(f)return;if((window.scrollY+window.innerHeight)/document.documentElement.scrollHeight>=.5){f=true;dataLayer.push({event:'scroll_50'})}})})();
+(function(){var f=false;window.addEventListener('scroll',function(){if(f)return;if((window.scrollY+window.innerHeight)/document.documentElement.scrollHeight>=.5){f=true;gtag('event','scroll_50')}})})();
 </script>
 </body>
 </html>
